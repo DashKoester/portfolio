@@ -1,0 +1,165 @@
+:root {
+  --container-color: #333;
+  --left-color: rgba(232, 74, 39, 0.7);
+  --right-color: rgba(19, 41, 75, 0.7);
+  --hover-width: 70%;
+  --other-width: 30%;
+  --speed: 1000ms;
+}
+
+html, body {
+  font-family: sans-serif;
+  background: white;
+}
+
+#root h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  cursor: default;
+}
+
+.ss-button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 4rem;
+  width: 15rem;
+  padding-top: 1.2rem;
+  transform: translateX(-50%); 
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  background-color: #E84A27;
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-color);
+}
+
+.split.right {
+  right:0;
+  background-color: #13294b;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-color);
+}
+
+.split.left, .split.left:before, .split.right, .split.right:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+@media(max-width: 1024px) {
+  #root h1 {
+    font-size: 3rem;
+  }
+
+  .ss-button {
+    width: 12rem;
+  }
+}
+
+@media(max-width: 800px) {
+  #root h1 {
+    font-size: 2rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .ss-button {
+    top: 70%;
+  }
+}
+
+
+#logo-screen {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  /* background-image: url('%PUBLIC_URL%/programming.jpeg') center center no-repeat; */
+  font-size: 2.5em; 
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  cursor: default;
+}
+
+/* #logo {
+  color: white;
+  border: white 2px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+} */
+
+.logo {
+  margin-top: 20%;
+}
+
+.resume-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.research-list {
+  margin-top: 10px;
+}
+
+.research-content {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}

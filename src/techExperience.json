@@ -1,0 +1,90 @@
+{
+  "languages": [
+    {
+      "id": "1",
+      "title": "C++",
+      "description": "Backend data structure development with C++11 and the Clang compiler",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 2,
+      "title": "HTML & CSS",
+      "description": "Modern web development utilizing Flex and Grid layouts",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 3,
+      "title": "Android & Java",
+      "description": "Mobile application development for Android systems",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 4,
+      "title": "JavaScript",
+      "description": "Interactive web development utilizing ES6",
+      "url": "https://github.com/seb314/Spot"
+    }
+  ],
+
+  "frameworks": [
+    {
+      "id": 1,
+      "title": "ReactJS",
+      "description": "JavaScript Framework",
+      "image": "../Images/react.png",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 2,
+      "title": "Pug/Jade",
+      "description": "HTML Precompiler",
+      "image": "../Images/pug.png",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 3,
+      "title": "SCSS",
+      "description": "CSS Precompiler",
+      "image": "../Images/scss.png",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 4,
+      "title": "Sample",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio tellus, placerat non tempus eu, cursus ac augue. Pellentesque fermentum lorem a velit volutpat rhoncus. Integer sed faucibus lorem.",
+      "url": "https://github.com/seb314/Spot"
+
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Spott",
+      "description": "A crowd-sourced study spot finder app for Android. Devoloped for a group project at UIUC from September - December 2017.",
+      "image": "../Images/spott.png",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 2,
+      "title": "Faith Lutheran Church Website",
+      "description": "A website developed for a local church in Normal, IL. Developed and maintained solely by myself from June - December 2017.",
+      "image": "../Images/faith.png",
+      "url": "https://github.com/DashKoester/faith-lutheran"
+    },
+    {
+      "id": 3,
+      "title": "Data Structures",
+      "description": "Several backend projects developed for CS225 - Data Structures course at UIUC. Completed assignments utilizing various forms of lists, trees, graphs, and more.",
+      "image": "../Images/cs225.png",
+      "url": "https://courses.engr.illinois.edu/cs225/fa2017/info/github/"
+    },
+    {
+      "id": 4,
+      "title": "Sample",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio tellus, placerat non tempus eu, cursus ac augue. Pellentesque fermentum lorem a velit volutpat rhoncus. Integer sed faucibus lorem.",
+      "url": "https://github.com/seb314/Spot"
+
+    }
+  ]
+}
