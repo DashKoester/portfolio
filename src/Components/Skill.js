@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Item, Icon } from 'semantic-ui-react';
+import { Header, Item, Icon } from 'semantic-ui-react';
 
 // import static images until I figure out webpack
 import cppImg from '../Images/cpp.png';
@@ -24,8 +24,8 @@ export default class Skill extends Component {
     return (
       <Item>
         <Item.Image size='small' src={this.determineImage(this.props.title)} alt='Something' />
-        <Item.Content>
-          <Item.Header as='h2'>{this.props.title}</Item.Header>
+        <Item.Content verticalAlign='top'>
+          <Header size='large'>{this.props.title}</Header>
           <Item.Description>
             {this.props.description}
           </Item.Description>

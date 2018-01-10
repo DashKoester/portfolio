@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
-import { ItemGroup } from 'semantic-ui-react';
+import { ItemGroup, Divider } from 'semantic-ui-react';
 
 
 class SkillsList extends Component {
@@ -42,9 +42,12 @@ class SkillsList extends Component {
     ));
 
     return (
-      <ItemGroup divided>
-        {skillComponents}
-      </ItemGroup>
+      <div>
+        <Divider />
+        <ItemGroup divided>
+          {skillComponents}
+        </ItemGroup>
+      </div>
     );
   }
 }

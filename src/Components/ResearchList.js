@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ResearchLab from './ResearchLab';
-import { Container, Divider, Icon } from 'semantic-ui-react';
+import { Container, Divider, Icon, Segment } from 'semantic-ui-react';
 import researchExperience from '../researchExperience.json';
 
 export default class ResearchList extends Component {
@@ -34,8 +34,10 @@ export default class ResearchList extends Component {
 
     return (
       <Container text className='research-list'>
-        <Icon link name='left arrow circle' color='black' size='big' onClick={this.props.onExit}/>
-        {labComponents}
+          <Icon link name='left arrow circle' color='black' size='big' onClick={this.props.onExit}/>
+        <Segment raised>
+            {labComponents}
+        </Segment>
       </Container>
     );
   }

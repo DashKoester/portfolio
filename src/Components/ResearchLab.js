@@ -15,7 +15,8 @@ export default class ResearchLab extends Component {
             <Icon name='external' size='large' color='black'/>
             {this.props.url}
          </a>
-         <Divider />
+         <br />
+         {this.props.id !== 3 ? <Divider /> : null}
       </div>
     );
   }
