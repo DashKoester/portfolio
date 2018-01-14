@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+html, body {
+  font-family: sans-serif;
+  background: white;
+}
+
 :root {
   --container-color: #333;
   --left-color: rgba(232, 74, 39, 0.7);
@@ -8,9 +15,9 @@
   --speed: 1000ms;
 }
 
-html, body {
-  font-family: sans-serif;
-  background: white;
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 #root h1 {
@@ -156,8 +163,9 @@ html, body {
 
 
 #logo-screen {
-  height: 100vh;
-  width: 100vw;
+  font-family: 'Julius Sans One', sans-serif;
+  height: 100%;
+  width: 100%;
   background: black;
   /* background-image: url('%PUBLIC_URL%/programming.jpeg') center center no-repeat; */
   font-size: 2.5em; 
@@ -166,23 +174,72 @@ html, body {
   cursor: default;
 }
 
-/* #logo {
+#logo {
   color: white;
   border: white 2px solid;
-  border-radius: 5px;
-  padding: 10px 20px;
-} */
+}
 
-.logo {
+.branding {
   margin-top: 20%;
 }
 
-.resume-container {
-  height: 100vh;
-  width: 100vw;
+.ui.huge.center.aligned.header {
+  margin: 0;
+}
+
+
+.ui.courseNumber {
+  padding: 30px 50px;
+  white-space: nowrap;
+}
+
+.ui.items>.item>.content>.description {
+  font-size: 16px;
 }
 
 .research-list {
   margin-top: 10px;
-  height: 100vh;
+  height: 100%;
+}
+
+.research-image {
+  width: 100%;
+  height: 600px;
+  opacity: 0.7;
+}
+
+.additional-experience-title {
+  text-align: center;
+  padding-top: 30px;
+  height: 140px;
+  background-color: #333;
+}
+
+.additional-experience-heading {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.select-experience {
+  float: left;
+  width: 100%;
+}
+
+.experience-content {
+  float: right;
+}
+
+.research-content {
+  position: relative;
+  background-color: #e6e6e6;
+  line-height: 3;
+}
+
+.research-content-text {
+  padding: 60px 80px;
+  font-size: 18px;
+}
+
+.research-content-text p {
+  line-height: 2;
 }

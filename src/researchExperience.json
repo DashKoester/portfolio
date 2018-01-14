@@ -1,7 +1,7 @@
 {
-  "labs": [
+  "Labs": [
     {
-      "id": "1",
+      "id": "0",
       "title": "Decision Neuroscience Lab",
       "director": "Dr. Aron K. Barbey",
       "timeframe": "February 2017 - August 2017",
@@ -9,7 +9,7 @@
       "url": "https://www.decisionneurosciencelab.org/"
     },
     {
-      "id": 2,
+      "id": 1,
       "title": "Center for Parent-Child Studies",
       "director": "Dr. Eva Pomerantz",
       "timeframe": "May 2016 - December 2016",
@@ -17,7 +17,7 @@
       "url": "http://labs.psychology.illinois.edu/cpcs/"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Spatial Cognition Lab",
       "director": "Dr. Ranxiao Frances Wang",
       "timeframe": "February 2016 - May 2016",

@@ -1,5 +1,5 @@
 {
-  "languages": [
+  "Languages": [
     {
       "id": "1",
       "title": "C++",
@@ -22,7 +22,7 @@
     }
   ],
 
-  "frameworks": [
+  "Frameworks": [
     {
       "id": 1,
       "title": "ReactJS",
@@ -48,7 +48,7 @@
     }
   ],
   
-  "projects": [
+  "Projects": [
     {
       "id": 1,
       "title": "Portfolio Website",

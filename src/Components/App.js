@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import SplitScreen from './SplitScreen';
-import Coursework from './Coursework';
-import Resume from './Resume';
-import ResearchList from './ResearchList';
+import SplitScreen from './Split-Screen/SplitScreen';
+import Resume from './Split-Screen/Resume';
+import techExperience from '../techExperience.json';
+import coursework from '../coursework.json';
+import researchExperience from '../researchExperience.json';
 
 export default class App extends Component {
   constructor(props){
@@ -11,12 +12,12 @@ export default class App extends Component {
       showSplitScreen: null,
       showCoursework: null,
       showResume: null,
-      showResearch: null
+      showResearch: null,
+      data: [],
+      dataType: '',
+      activeItem: '',
+      menuTitles: [],
     };
-
-    this.showCoursework = this.showCoursework.bind(this);
-    this.showResume = this.showResume.bind(this);
-    this.showResearch = this.showResearch.bind(this);
   }
 
   componentDidMount = () => {
@@ -28,40 +29,77 @@ export default class App extends Component {
     })
   }
 
-  showCoursework(){
-    let splitScreenFlag = this.state.showSplitScreen;
-    let courseworkFlag = this.state.showCoursework;
+  showCoursework = () => {
     this.setState({
-      showSplitScreen: !splitScreenFlag,
-      showCoursework: !courseworkFlag,
+      showSplitScreen: !this.state.showSplitScreen,
+      showCoursework: !this.state.showCoursework,
+      data: coursework,
+      activeItem: 'Neuroscience',
+      menuTitles: ["Neuroscience", "Computer Science", "Philosophy"],
+      dataType: 'Courses'
     });
   }  
 
-  showResume(){
-    let splitScreenFlag = this.state.showSplitScreen;
-    let resumeFlag = this.state.showResume;
+  showResume = () => {
     this.setState({
-      showSplitScreen: !splitScreenFlag,
-      showResume: !resumeFlag,
+      showSplitScreen: !this.state.showSplitScreen,
+      showResume: !this.state.showResume,
+      data: techExperience,
+      activeItem: 'Languages',
+      menuTitles: ["Languages", "Frameworks", "Projects"],
+      dataType: 'Skills'
     });
   }
 
-  showResearch(){
-    let splitScreenFlag = this.state.showSplitScreen;
-    let researchFlag = this.state.showResearch;
+  showResearch = () => {
     this.setState({
-      showSplitScreen: !splitScreenFlag,
-      showResearch: !researchFlag
+      showSplitScreen: !this.state.showSplitScreen,
+      showResearch: !this.state.showResearch,
+      data: researchExperience,
+      activeItem: 'Labs',
+      menuTitles: ["Spatial Cognition", "CPCS", "Desicion Neuroscience"],
+      dataType: 'Research'
+
     });
   }
   
   render() {
     return (
       <div>
-        {this.state.showSplitScreen ? <SplitScreen handleLeftClick={this.showCoursework} handleMidClick={this.showResume} handleRightClick={this.showResearch} /> : null}
-        {this.state.showCoursework ? <Coursework onExit={this.showCoursework}/> : null}
-        {this.state.showResume ? <Resume onExit={this.showResume}/> : null}
-        {this.state.showResearch ? <ResearchList onExit={this.showResearch}/> : null}
+        {this.state.showSplitScreen ?
+          <SplitScreen
+            handleLeftClick={this.showCoursework}
+            handleMidClick={this.showResume}
+            handleRightClick={this.showResearch} />
+          : null
+        }
+        {this.state.showCoursework ? 
+          <Resume
+          menuTitles={this.state.menuTitles}  
+            activeItem={this.state.activeItem}
+            data={this.state.data}
+            dataType={this.state.dataType}
+            onExit={this.showCoursework} />
+          : null
+        }
+        {this.state.showResume ? 
+          <Resume
+            menuTitles={this.state.menuTitles}  
+            activeItem={this.state.activeItem}
+            data={this.state.data}
+            dataType={this.state.dataType}
+            onExit={this.showResume} />
+          : null
+        }
+        {this.state.showResearch ? 
+          <Resume
+            menuTitles={this.state.menuTitles}  
+            activeItem={this.state.activeItem}
+            data={this.state.data}
+            dataType={this.state.dataType}
+            onExit={this.showResearch} />
+          : null
+        }
       </div>
     );
   }
