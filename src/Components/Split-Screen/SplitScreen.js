@@ -63,7 +63,7 @@ export default class SplitScreen extends Component {
     return (
       <div className={this.state.containerClassName}>
         <div className={this.state.leftClassName} onMouseEnter={this.leftMouseEnter} onMouseLeave={this.leftMouseLeave}>
-        <Header as='h1' size='medium'>The<br />Student</Header>
+          <h1>The<br />Student</h1>
           <Button className='ss-button' inverted animated='fade' onClick={this.props.handleLeftClick}>
             <Button.Content visible>
               LEARN MORE

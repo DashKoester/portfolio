@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Menu, Header, Icon } from 'semantic-ui-react';
 
 export default class ResumeMenu extends Component {
-
   render() {
 
     /*

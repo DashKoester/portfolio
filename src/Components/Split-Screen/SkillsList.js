@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
 import Course from './Course';
+import Lab from './Lab';
 import { ItemGroup, Divider } from 'semantic-ui-react';
 
 
@@ -57,6 +58,19 @@ export default class SkillsList extends Component {
           />
         ));
         break;
+
+      case 'Research':
+      components =
+        <Lab
+          key={'lab-' + this.state.skills.id}
+          id={this.state.skills.id}
+          title={this.state.skills.title}
+          director={this.state.skills.director}
+          description={this.state.skills.description}
+          timeframe={this.state.skills.timeframe}
+          url={this.state.skills.url}
+        />;
+      break;
 
     default:
       console.log("Couldn't map the skills correctly!")

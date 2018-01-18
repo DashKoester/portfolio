@@ -32,7 +32,6 @@ export default class Resume extends Component {
   }
   
   render() {
-    console.log(this.state.activeItem);
     return (
       <Container className='resume-container'>
         <ResumeMenu menuTitles={this.props.menuTitles} attached activeItem={this.state.activeItem} onItemChange={this.handleItemClick} onExit={this.props.onExit}/>

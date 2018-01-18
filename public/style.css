@@ -5,6 +5,111 @@ html, body {
   background: white;
 }
 
+
+.lp-menu-container, .lp-header-container, .lp-logo-container {
+  flex: 1;
+  display: flex;
+  color: white;
+}
+
+.lp-sidebar {
+  width: 100%;
+}
+
+.lp-menu-button {
+  margin: 30px;
+}
+
+.lp-menu-button:hover {
+  filter: brightness(110%);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 10%;
+  transition: .7s ease-in-out;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav-icon {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.lp-header-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 30px;
+  border-radius: 3px;
+  cursor: default;  
+}
+
+.lp-header-name {
+  float: left;
+  margin-right: 15px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.lp-header-name h1 {
+  font-size: 42px;
+  padding: 0;
+  margin: 0;
+}
+
+.lp-header-extra p {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lp-logo-container {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.lp-resume-icon {
+  margin: 50px;
+  height: 125px;
+  cursor: pointer;
+}
+
+/* Variables for split-screen animations */
 :root {
   --container-color: #333;
   --left-color: rgba(232, 74, 39, 0.7);
@@ -13,20 +118,6 @@ html, body {
   --hover-width: 40%;
   --other-width: 30%;
   --speed: 1000ms;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
-}
-
-#root h1 {
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  cursor: default;
 }
 
 .ss-button {
@@ -43,7 +134,7 @@ html, body {
 .ss-container {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgb(39, 197, 232);
 }
 
@@ -51,7 +142,7 @@ html, body {
   position: relative;
   font-size: 42px;
   width: 33%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -65,7 +156,7 @@ html, body {
   position:absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: var(--left-color);
 }
 
@@ -79,7 +170,7 @@ html, body {
   position:absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: var(--mid-color);
 }
 
@@ -139,7 +230,7 @@ html, body {
   z-index: 2;
 }
 
-@media(max-width: 1024px) {
+/* @media(max-width: 1024px) {
   #root h1 {
     font-size: 3rem;
   }
@@ -153,7 +244,7 @@ html, body {
   #root h1 {
     font-size: 2rem;
   }
-}
+} */
 
 @media(max-height: 700px) {
   .ss-button {
@@ -162,26 +253,13 @@ html, body {
 }
 
 
-#logo-screen {
-  font-family: 'Julius Sans One', sans-serif;
-  height: 100%;
+
+.card-container {
+  height: 40%;
   width: 100%;
-  background: black;
-  /* background-image: url('%PUBLIC_URL%/programming.jpeg') center center no-repeat; */
-  font-size: 2.5em; 
-  display: flex;
-  justify-content: center;
-  cursor: default;
+  background-color: orange;
 }
 
-#logo {
-  color: white;
-  border: white 2px solid;
-}
-
-.branding {
-  margin-top: 20%;
-}
 
 .ui.huge.center.aligned.header {
   margin: 0;
