@@ -1,43 +1,52 @@
 import React, { Component } from 'react';
-import { Menu, Header, Icon } from 'semantic-ui-react';
+import { Menu, Icon } from 'semantic-ui-react';
 
 export default class ResumeMenu extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      activeItem: this.props.activeItem
+    }
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    if (nextProps !== this.props) {
+      this.setState({
+        activeItem: nextProps.activeItem
+      })
+    }
+  }
+
   render() {
-
-    /*
-    @TODO:
-      figure out why active item doesn't get applied {this.props.activeItem}
-
-    */
-    const active = this.props.activeItem;
     return (
       <div>
-        <br />
-        <Header as='h2' textAlign='center'>
-          <Header.Content>
-            <Icon size='large' link name='left arrow circle' onClick={this.props.onExit} />
-          </Header.Content>
-          <Header.Content>
-            Technical Experience
-          </Header.Content>
-        </Header>
-        <Menu fluid widths={3} pointing size='massive'>
-          <Menu.Item
-            name={this.props.menuTitles[0]}
-            active={this.name === active}
-            onClick={this.props.onItemChange}>
-          </Menu.Item>
-          <Menu.Item
-            name={this.props.menuTitles[1]}
-            active={this.name === active}
-            onClick={this.props.onItemChange}>
-          </Menu.Item>
-          <Menu.Item
-            name={this.props.menuTitles[2]}
-            active={this.name === active}
-            onClick={this.props.onItemChange}>
-          </Menu.Item>
-        </Menu>
+        <div className='resume-menu-title'>
+          <div className='resume-menu-title-icon'>
+            <Icon link size='huge' name='arrow circle outline left' onClick={this.props.onExit}/>
+          </div>
+          <h1>{this.props.title}</h1>
+        </div>
+
+        {this.props.title !== 'Research Experience' ? 
+          <Menu style={{margin: '0'}} fluid widths={3} pointing size='massive'>
+            <Menu.Item
+              name={this.props.menuTitles[0]}
+              active={this.props.menuTitles[0] === this.state.activeItem}
+              onClick={this.props.onItemChange}>
+            </Menu.Item>
+            <Menu.Item
+              name={this.props.menuTitles[1]}
+              active={this.props.menuTitles[1] === this.state.activeItem}
+              onClick={this.props.onItemChange}>
+            </Menu.Item>
+            <Menu.Item
+              name={this.props.menuTitles[2]}
+              active={this.props.menuTitles[2] === this.state.activeItem}
+              onClick={this.props.onItemChange}>
+            </Menu.Item>
+          </Menu>
+          : null}
       </div>
     );
   }

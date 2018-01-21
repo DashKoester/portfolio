@@ -24,18 +24,17 @@ export default class Resume extends Component {
   
   // must be will mount
   componentWillMount = () => {
-    const active = this.props.activeItem;
     this.setState({
-      activeItem: active,
-      skills: this.props.data[active]
+      activeItem: this.props.activeItem,
+      skills: this.props.data[this.props.activeItem]
     })
   }
   
   render() {
     return (
       <Container className='resume-container'>
-        <ResumeMenu menuTitles={this.props.menuTitles} attached activeItem={this.state.activeItem} onItemChange={this.handleItemClick} onExit={this.props.onExit}/>
-        <SkillsList dataType={this.props.dataType} skills={this.state.skills} />
+        <ResumeMenu title={this.props.title} menuTitles={this.props.menuTitles} attached activeItem={this.state.activeItem} onItemChange={this.handleItemClick} onExit={this.props.onExit}/>
+        <SkillsList title={this.props.title} skills={this.state.skills} />
       </Container>
     );
   }

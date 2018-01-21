@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Sidebar, Modal, Button, Menu, Image, Icon, Header } from 'semantic-ui-react';
+import { Header, Icon, Modal, Button } from 'semantic-ui-react';
 import backgroundImage from '../../Images/landingPage.jpg';
-import resumeImage from '../../Images/resume.png';
 import conciseResume from '../../Images/conciseResume.pdf';
 import fullResume from '../../Images/fullResume.pdf';
 
@@ -26,7 +25,7 @@ export default class LandingPage extends Component {
     }
   }
 
-  componentDidMount =  () => {
+  componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -56,18 +55,18 @@ export default class LandingPage extends Component {
       <div style={containerStyle}>
         <div className='lp-menu-container' onClick={this.toggleVisibility}>
           <div className='lp-menu-button'>
-            <Icon name='bars' bordered size='huge' link onClick={this.toggleVisibility}/>
+            <Icon name='bars' bordered size='huge' link onClick={this.toggleVisibility} />
           </div>
           <div className='sidenav' style={this.state}>
             <a href="javascript:void(0)" className="closebtn" onClick={this.toggleVisibility}>&times;</a>
-            <div  className='sidenav-icon'>
+            <div className='sidenav-icon'>
               <a href='https://www.github.com/DashKoester'>
-              <Header inverted icon>
-                <Icon name='github' link size='huge' inverted />
-                <Header.Subheader>
-                  GitHub
+                <Header inverted icon>
+                  <Icon name='github' link size='huge' inverted />
+                  <Header.Subheader>
+                    GitHub
                 </Header.Subheader>
-              </Header>
+                </Header>
               </a>
               <a href='https://www.gitlab.com/DashKoester'>
                 <Header inverted icon>
@@ -81,7 +80,7 @@ export default class LandingPage extends Component {
                 <Modal
                   size='tiny'
                   dimmer='blurring'
-                  trigger= {
+                  trigger={
                     <Header inverted icon>
                       <Icon name='mail' link size='huge' color='teal' />
                       <Header.Subheader>
@@ -91,9 +90,9 @@ export default class LandingPage extends Component {
                   }>
                   <Modal.Header>Email Me!</Modal.Header>
                   <Modal.Content>
-                      <p>Feel free to contact me at <a href='mailto:dashkoester@gmail.com?subject=Portfolio%20Contact' >dashkoester@gmail.com</a></p>
+                    <p>Feel free to contact me at <a href='mailto:dashkoester@gmail.com?subject=Portfolio%20Contact' >dashkoester@gmail.com</a></p>
                   </Modal.Content>
-                </Modal>              
+                </Modal>
               </a>
             </div>
           </div>
@@ -112,16 +111,21 @@ export default class LandingPage extends Component {
           </div>
         </div>
         <div className='lp-logo-container'>
-          <Modal basic size='tiny' dimmer='blurring' trigger={<Image src={resumeImage} className='lp-resume-icon' draggable='false'/>}>
+          <Modal
+            basic
+            size='tiny'
+            dimmer='blurring'
+            trigger={<div className='lp-resume-container'><Header as='h2' inverted icon size='huge'>
+              <Icon name='download' size='tiny' />Resume</Header></div>}>
             <Modal.Header>
-              <Header content='Which Version Would You Prefer?' textAlign='center' size='large' inverted dividing/>
+              <Header content='Which Version Would You Prefer?' textAlign='center' size='large' inverted dividing />
             </Modal.Header>
             <Modal.Content>
               <a href={conciseResume} download='Concise Resume - Dashiell Koester'>
-              <Button inverted size='massive'>Consise Resume</Button>
+                <Button inverted size='massive'>Consise Resume</Button>
               </a>
               <a href={fullResume} download='Full Resume - Dashiell Koester'>
-              <Button inverted floated='right' size='massive'>Full Resume</Button>
+                <Button inverted floated='right' size='massive'>Full Resume</Button>
               </a>
             </Modal.Content>
           </Modal>

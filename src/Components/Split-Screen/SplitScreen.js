@@ -1,102 +1,105 @@
 import React, { Component } from 'react';
-import { Header, Button } from 'semantic-ui-react';
+import Split from './Split';
+import Resume from './Resume';
+import techExperience from '../../techExperience.json';
+import coursework from '../../coursework.json';
+import researchExperience from '../../researchExperience.json';
 
 export default class SplitScreen extends Component {
-
   constructor(props){
     super(props);
-
     this.state = {
-      leftClassName: "",
-      midClassName: "",
-      rightClassName: "",
-      containerClassName: ""
+      showSplitScreen: null,
+      showCoursework: null,
+      showResume: null,
+      showResearch: null,
+      data: [],
+      dataType: '',
+      activeItem: '',
+      menuTitles: [],
     };
   }
-  
-  componentDidMount(){
-    this.setState({
-      leftClassName: "split left",
-      midClassName: "split mid",
-      rightClassName: "split right",
-      containerClassName: "ss-container"
-    })
-  }
-  
-  leftMouseEnter = () => {
-    this.setState({
-      containerClassName: "ss-container hover-left"
-    })
-  }
-  
-  leftMouseLeave = () => {
-    this.setState({
-      containerClassName: "ss-container"
-    })  
-  }
 
-  midMouseEnter = () => {
+  componentDidMount = () => {
     this.setState({
-      containerClassName: "ss-container hover-mid"
-    })
-  }
-  
-  midMouseLeave = () => {
-    this.setState({
-      containerClassName: "ss-container"
-    })  
-  }
-
-  rightMouseEnter = () => {
-    this.setState({
-      containerClassName: "ss-container hover-right"
-    })
-  }
-  
-  rightMouseLeave = () => {
-    this.setState({
-      containerClassName: "ss-container"
+      showSplitScreen: true,
+      showCoursework: false,
+      showResume: false,
+      showResearch: false
     })
   }
 
+  showCoursework = () => {
+    this.setState({
+      showSplitScreen: !this.state.showSplitScreen,
+      showCoursework: !this.state.showCoursework,
+      data: coursework,
+      activeItem: 'Neuroscience',
+      menuTitles: ["Neuroscience", "Computer Science", "Philosophy"],
+      title: 'Coursework'
+    });
+  }  
+
+  showResume = () => {
+    this.setState({
+      showSplitScreen: !this.state.showSplitScreen,
+      showResume: !this.state.showResume,
+      data: techExperience,
+      activeItem: 'Languages',
+      menuTitles: ["Languages", "Frameworks", "Projects"],
+      title: 'Technical Experience'
+    });
+  }
+
+  showResearch = () => {
+    this.setState({
+      showSplitScreen: !this.state.showSplitScreen,
+      showResearch: !this.state.showResearch,
+      data: researchExperience,
+      activeItem: 'Labs',
+      menuTitles: ["Spatial Cognition", "CPCS", "Desicion Neuroscience"],
+      title: 'Research Experience'
+
+    });
+  }
+  
   render() {
     return (
-      <div className={this.state.containerClassName}>
-        <div className={this.state.leftClassName} onMouseEnter={this.leftMouseEnter} onMouseLeave={this.leftMouseLeave}>
-          <h1>The<br />Student</h1>
-          <Button className='ss-button' inverted animated='fade' onClick={this.props.handleLeftClick}>
-            <Button.Content visible>
-              LEARN MORE
-            </Button.Content>
-            <Button.Content hidden>
-              View Coursework
-            </Button.Content>
-          </Button>
-        </div>
-
-        <div className={this.state.midClassName} onMouseEnter={this.midMouseEnter} onMouseLeave={this.midMouseLeave}>
-        <Header as='h1' size='medium'>The<br />Developer</Header>
-          <Button className='ss-button' inverted animated='fade' onClick={this.props.handleMidClick}>
-            <Button.Content visible>
-              LEARN MORE
-            </Button.Content>
-            <Button.Content hidden>
-              View Technical Experience
-            </Button.Content>
-          </Button>
-        </div>
-
-        <div className={this.state.rightClassName} onMouseEnter={this.rightMouseEnter} onMouseLeave={this.rightMouseLeave}>
-        <Header as='h1' size='medium'>The<br />Researcher</Header>
-          <Button className='ss-button' inverted animated='fade' onClick={this.props.handleRightClick}>
-            <Button.Content visible>
-              LEARN MORE
-            </Button.Content>
-            <Button.Content hidden>
-              View Research Experience
-            </Button.Content>
-          </Button>
-        </div>
+      <div>
+          {this.state.showSplitScreen ?
+            <Split
+              handleLeftClick={this.showCoursework}
+              handleMidClick={this.showResume}
+              handleRightClick={this.showResearch} />
+            : null
+          }
+          {this.state.showCoursework ? 
+            <Resume
+            menuTitles={this.state.menuTitles}  
+              activeItem={this.state.activeItem}
+              data={this.state.data}
+              title={this.state.title}
+              onExit={this.showCoursework} />
+            : null
+          }
+          {this.state.showResume ? 
+            <Resume
+              menuTitles={this.state.menuTitles}  
+              activeItem={this.state.activeItem}
+              data={this.state.data}
+              title={this.state.title}
+              onExit={this.showResume} />
+            : null
+          }
+          {this.state.showResearch ? 
+            <Resume
+              menuTitles={this.state.menuTitles}  
+              activeItem={this.state.activeItem}
+              data={this.state.data}
+              title={this.state.title}
+              onExit={this.showResearch} />
+            : null
+          }
       </div>
     );
   }

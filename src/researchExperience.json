@@ -1,5 +1,5 @@
 {
-  "Decision Neuroscience Lab":
+  "Labs":[
     {
       "id": "0",
       "title": "Decision Neuroscience Lab",
@@ -8,24 +8,21 @@
       "description": "The third lab I contributed to at UIUC was the Decision Neuroscience Lab at the renowned Beckman Institute for Advanced Science and Technology. I worked under the supervision of a post-doc, Chris Zwilling. I was a part of two projects in the lab: a Cognitive Chronobiology study and a Nutritional Cognitive Enhancement study. I was the sole undergraduate research assistant working on the Cognitive Chronobiology study, and will be credited as a co-author on the paper when it is published. I wrote the data analysis for both of these projects in R, a statistical computing scripting language. In addition to the data analysis, I created multiple graphs and spreadsheets for the director's use when presenting the project to financiers and journal editors.",
       "url": "https://www.decisionneurosciencelab.org/"
     },
-
-  "Center for Parent-Child Studies":
     {
-      "id": 0,
+      "id": 1,
       "title": "Center for Parent-Child Studies",
       "director": "Dr. Eva Pomerantz",
       "timeframe": "May 2016 - December 2016",
       "description": "The second lab I worked in was the Center for Parent-Child Studies. I worked primarily under graduate student Janet Ng. I was a part of the Reasoning Skills Project. The purpose of the study was to determine differences in the parenting styles between American parents and Eastern-Asian parents (we worked with a sister lab in Hong Kong, China). I oversaw running the child in the experiment, recording the results, data entry, and transcribing and analyzing the videos of the mothers. Again, I left before the project ended, so I cannot relay the specific findings from the study (it is currently ongoing). However, the consensus was that American parents were much more focused on their child’s self-worth and making sure they weren’t upset, whereas the Asian parents focused more on their children improving on the task.",
       "url": "http://labs.psychology.illinois.edu/cpcs/"
     },
-
-  "Spatial Cognition Lab":
     {
-      "id": 0,
+      "id": 2,
       "title": "Spatial Cognition Lab",
       "director": "Dr. Ranxiao Frances Wang",
       "timeframe": "February 2016 - May 2016",
       "description": "The first research lab I worked in was the Spatial Cognition Lab at the University of Illinois at Urbana-Champaign. I worked primarily under the graduate student Meera Zukosky. I was working on a “mind-wandering” project. The purpose of the study was to determine approximately how long a person can focus on a cognitive task before their mind wanders elsewhere and their attention is broken. I was one of the two research assistants that ran participants through the experiment and recorded the results. I was only a part of this project for one semester, and it was in the middle of the experiment process. I cannot speak to the conclusions made from the work, as I moved to another lab long before the experiment was ended.",
       "url": "http://publish.illinois.edu/franceswang/lab/"
     }
+  ]
 }

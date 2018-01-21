@@ -32,8 +32,8 @@ export default class SkillsList extends Component {
   } 
   
   render() {
-    switch(this.props.dataType) {
-      case 'Courses':
+    switch(this.props.title) {
+      case 'Coursework':
         // must use var to avoid block scoping
         var components = this.state.skills.map((course) => (
           <Course
@@ -47,7 +47,7 @@ export default class SkillsList extends Component {
         ));
         break;
       
-      case 'Skills':
+      case 'Technical Experience':
         components = this.state.skills.map((skill) => (
           <Skill
             key={'skill-' + skill.id}
@@ -59,17 +59,18 @@ export default class SkillsList extends Component {
         ));
         break;
 
-      case 'Research':
-      components =
+      case 'Research Experience':
+      components = this.state.skills.map((lab) => (
         <Lab
-          key={'lab-' + this.state.skills.id}
-          id={this.state.skills.id}
-          title={this.state.skills.title}
-          director={this.state.skills.director}
-          description={this.state.skills.description}
-          timeframe={this.state.skills.timeframe}
-          url={this.state.skills.url}
-        />;
+          key={'lab-' + lab.id}
+          id={lab.id}
+          title={lab.title}
+          director={lab.director}
+          description={lab.description}
+          timeframe={lab.timeframe}
+          url={lab.url}
+        />
+      ));
       break;
 
     default:

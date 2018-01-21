@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon, Header } from 'semantic-ui-react';
-// showcases a technical skill in skillList
+
+
 export default class ResearchLab extends Component {
 
   render() {
