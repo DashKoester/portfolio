@@ -12,13 +12,13 @@ export default class AboutMe extends Component {
             <h2>Neuroscience Student // Aspiring Sofware Developer</h2>
             <Divider />
             <p>
-              Hi! My name is Dashiell Koester, but I usually go by Dash. I am currently a Senior at the University of Illinois at Urbana-Champaign. In May, I will receive a Bachelor's of Science in Psychology with a concentration in Behavioral Neuroscience. Along with my B.S., I will also receive a Minor degree in both Computer Science and Philosophy.
+              Hi! My name is Dashiell Koester (but Dash is easier for most people to say). I am currently a Senior at the University of Illinois at Urbana-Champaign. In May, I will receive a Bachelor's of Science in Psychology with a concentration in Behavioral Neuroscience. Along with my B.S., I will also receive a Minor degree in both Computer Science and Philosophy.
             </p>
             <p>
-              I entered college with the full intentions of applying to Graduate School for Neuroscience and becoming a Professor. I loved studying the human brain, and had the incredible opportunity to work for three prominent research labs throughout my undergraduate years.
+              I actually entered college with the full intentions of applying to Graduate School for Neuroscience and becoming a Professor. I loved studying the human brain, and had the incredible opportunity to work for three prominent research labs throughout my undergraduate years.
             </p>
             <p>
-              My sophomore year at UIUC I felt the desire to take a Computer Science course, just for the challenge of learning something new. I was always interested in technology, and the Intro to CS class fit perfectly in my schedule! Looking back now, choosing to take that class was one of the best decisions I have ever made. I was fascinated by programming; I had never been exposed to it before, and something about the ability to create something appear on a computer screen excited me.
+              However; my Sophomore year I decided to take an Intro to Computer Science course. I became fascinated with programming; I had never been exposed to it before, and something about the ability to create something appear on a computer screen excited me. Due to my interest in Neuroscience, I find topics in Articifial Intelligence and Machine Learning particularly appealing. I also have a passion for front-end development and UI/UX design, much of which is self-taught.
             </p>
             <p>
               I believe my three areas of knowlede complement each other well. I have taken courses in Cognitive and Social Psychology which has helped with my understanding of topics in User Interface Design. My studies in Memory, Attention, and Neural Networks have supplemented my understanding of Articifial Intelligence perfectly. Additionally, my courses in Ethical and Metaphysical theories have been instrumental to developing my critical thinking skills.

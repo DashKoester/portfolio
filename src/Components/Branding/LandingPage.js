@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Icon, Modal, Button } from 'semantic-ui-react';
+import { Header, Icon, Modal, Button, Popup } from 'semantic-ui-react';
 import backgroundImage from '../../Images/landingPage.jpg';
 import conciseResume from '../../Images/conciseResume.pdf';
 import fullResume from '../../Images/fullResume.pdf';
@@ -26,24 +26,19 @@ export default class LandingPage extends Component {
   }
 
   componentDidMount = () => {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.closeNavbar);
   }
 
-  toggleVisibility = () => {
-    if (this.state.width === '') {
+  openNavbar = () => {
+    if (this.state.width !== '15%'){
       this.setState({
         width: '15%'
       });
     }
-    else {
-      this.setState({
-        width: ''
-      });
-    }
   }
 
-  handleScroll = () => {
-    if (this.state.width === '15%') {
+  closeNavbar = () => {
+    if (this.state.width !== ''){
       this.setState({
         width: ''
       });
@@ -52,29 +47,44 @@ export default class LandingPage extends Component {
 
   render() {
     return (
-      <div style={containerStyle}>
-        <div className='lp-menu-container' onClick={this.toggleVisibility}>
+      <div style={containerStyle} onClick={this.closeNavbar}>
+        <div className='lp-menu-container'>
           <div className='lp-menu-button'>
-            <Icon name='bars' bordered size='huge' link onClick={this.toggleVisibility} />
+            <Icon name='bars' bordered size='huge' link onClick={this.openNavbar} />
           </div>
           <div className='sidenav' style={this.state}>
-            <a href="javascript:void(0)" className="closebtn" onClick={this.toggleVisibility}>&times;</a>
+            <a href="javascript:void(0)" className="closebtn">&times;</a>
             <div className='sidenav-icon'>
               <a href='https://www.github.com/DashKoester'>
-                <Header inverted icon>
-                  <Icon name='github' link size='huge' inverted />
-                  <Header.Subheader>
-                    GitHub
-                </Header.Subheader>
-                </Header>
+                <Popup
+                  position='right center'
+                  offset={10}
+                  trigger={
+                    <Header inverted icon>
+                    <Icon name='github' link size='huge' inverted />
+                      <Header.Subheader>
+                        GitHub
+                      </Header.Subheader>
+                    </Header>
+                  }
+                  content='Primary code repository'
+                />
               </a>
               <a href='https://www.gitlab.com/DashKoester'>
-                <Header inverted icon>
+                <Popup
+                position='right center'
+                offset={10}
+                trigger={
+                  <Header inverted icon>
                   <Icon name='gitlab' link size='huge' color='red' />
-                  <Header.Subheader>
-                    GitLab
-                  </Header.Subheader>
-                </Header>
+                    <Header.Subheader>
+                      GitLab
+                    </Header.Subheader>
+                  </Header>
+                }
+                content='Secondary code repository'
+                on='hover'
+              />
               </a>
               <a href="javascript:void(0)">
                 <Modal
@@ -97,7 +107,7 @@ export default class LandingPage extends Component {
             </div>
           </div>
         </div>
-        <div className='lp-header-container'>
+        <div className='lp-header-container' onClick={this.closeNavbar}>
           <div className="lp-header">
             <div className='lp-header-name'>
               <h1>dashiell</h1>
@@ -110,7 +120,7 @@ export default class LandingPage extends Component {
             </div>
           </div>
         </div>
-        <div className='lp-logo-container'>
+        <div className='lp-logo-container' onClick={this.closeNavbar}>
           <Modal
             basic
             size='tiny'
