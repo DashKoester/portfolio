@@ -27,9 +27,8 @@ export default class ResumeMenu extends Component {
           </div>
           <h1>{this.props.title}</h1>
         </div>
-
-        {this.props.title !== 'Research Experience' ? 
-          <Menu style={{margin: '0'}} fluid widths={3} pointing size='massive'>
+        {this.props.title === 'Coursework' ? 
+          <Menu color='blue' style={{marginBottom: '0'}} fluid widths={3} pointing size='massive'>
             <Menu.Item
               name={this.props.menuTitles[0]}
               active={this.props.menuTitles[0] === this.state.activeItem}
@@ -43,6 +42,20 @@ export default class ResumeMenu extends Component {
             <Menu.Item
               name={this.props.menuTitles[2]}
               active={this.props.menuTitles[2] === this.state.activeItem}
+              onClick={this.props.onItemChange}>
+            </Menu.Item>
+          </Menu>
+          : null}
+          {this.props.title === 'Technical Experience' ? 
+          <Menu color='blue' style={{marginBottom: '0'}} fluid widths={2} pointing size='massive'>
+            <Menu.Item
+              name={this.props.menuTitles[0]}
+              active={this.props.menuTitles[0] === this.state.activeItem}
+              onClick={this.props.onItemChange}>
+            </Menu.Item>
+            <Menu.Item
+              name={this.props.menuTitles[1]}
+              active={this.props.menuTitles[1] === this.state.activeItem}
               onClick={this.props.onItemChange}>
             </Menu.Item>
           </Menu>

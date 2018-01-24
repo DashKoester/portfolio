@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ResumeMenu from './ResumeMenu';
 import SkillsList from './SkillsList';
+import LanguageGrid from './LanguageGrid';
 import { Container } from 'semantic-ui-react';
 
 export default class Resume extends Component {
@@ -34,7 +35,10 @@ export default class Resume extends Component {
     return (
       <Container className='resume-container'>
         <ResumeMenu title={this.props.title} menuTitles={this.props.menuTitles} attached activeItem={this.state.activeItem} onItemChange={this.handleItemClick} onExit={this.props.onExit}/>
-        <SkillsList title={this.props.title} skills={this.state.skills} />
+        {this.state.activeItem === 'Languages and Frameworks' ?
+          <LanguageGrid title={this.props.title} skills={this.state.skills} /> :
+          <SkillsList title={this.props.title} skills={this.state.skills} />
+        }
       </Container>
     );
   }

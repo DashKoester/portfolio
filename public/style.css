@@ -103,15 +103,9 @@ html, body {
   align-items: flex-end;
 }
 
-.lp-resume-container {
-  padding: 10px;
-  border: 2px solid white;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+.lp-resume-download {
+  font-size: 20px;
   margin: 30px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ----- About Me Section ------ */
@@ -363,6 +357,7 @@ html, body {
   margin: 0;
   flex: .9;
   text-align: center;
+  font-size: 32px;
 }
 
 .research-image {

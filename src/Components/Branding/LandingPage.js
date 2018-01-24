@@ -125,8 +125,17 @@ export default class LandingPage extends Component {
             basic
             size='tiny'
             dimmer='blurring'
-            trigger={<div className='lp-resume-container'><Header as='h2' inverted icon size='huge'>
-              <Icon name='download' size='tiny' />Resume</Header></div>}>
+            trigger={
+              <div className='lp-resume-download'>
+              <Popup
+                position='left center'
+                trigger={
+                    <Icon link name='arrow circle outline down' size='huge'/>
+                  }
+                  content='Download My Resume!'
+                  />
+              </div>
+            }>
             <Modal.Header>
               <Header content='Which Version Would You Prefer?' textAlign='center' size='large' inverted dividing />
             </Modal.Header>

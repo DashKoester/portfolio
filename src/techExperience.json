@@ -1,50 +1,64 @@
 {
-  "Languages": [
+  "Languages and Frameworks": [
     {
-      "id": "1",
-      "title": "C++",
-      "description": "Backend data structure development with C++11 and the Clang compiler"
-    },
-    {
-      "id": 2,
-      "title": "HTML & CSS",
-      "description": "Modern web development utilizing Flex and Grid layouts"
-    },
-    {
-      "id": 3,
-      "title": "Android & Java",
-      "description": "Mobile application development for Android systems"
-    },
-    {
-      "id": 4,
-      "title": "JavaScript",
-      "description": "Interactive web development utilizing ES6"
-    }
-  ],
-
-  "Frameworks": [
-    {
-      "id": 1,
+      "id": 0,
       "title": "ReactJS",
-      "description": "JavaScript Framework",
+      "description": "Front-End JavaScript Framework",
       "image": "../Images/react.png"
     },
     {
+      "id": 1,
+      "title": "C++",
+      "description": "Backend data structure development with C++11 and the Clang compiler",
+      "image": "../Images/cpp.png"
+    },
+    {
       "id": 2,
-      "title": "Pug/Jade",
-      "description": "HTML Precompiler",
-      "image": "../Images/pug.png"
+      "title": "NodeJS",
+      "description": "NodeJS JavasScript development with a focus on React and Express",
+      "image": "../Images/node.png"
     },
     {
       "id": 3,
-      "title": "SCSS",
-      "description": "CSS Precompiler",
-      "image": "../Images/scss.png"
+      "title": "HTML & CSS",
+      "description": "Modern web development utilizing Flex and Grid layouts",
+      "image": "../Images/html.png"
     },
     {
       "id": 4,
-      "title": "Sample",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio tellus, placerat non tempus eu, cursus ac augue. Pellentesque fermentum lorem a velit volutpat rhoncus. Integer sed faucibus lorem."
+      "title": "Java",
+      "description": "General Java and event-driven Android programming",
+      "image": "../Images/java.png"
+    },
+    {
+      "id": 5,
+      "title": "R",
+      "description": "Data analysis and Visualization scripts",
+      "image": "../Images/r.png"
+    },
+    {
+      "id": 6,
+      "title": "Python",
+      "description": "Neural Network modeling",
+      "image": "../Images/python.png"
+    },
+    {
+      "id": 7,
+      "title": "Android",
+      "description": "Mobile application development for Android systems",
+      "image": "../Images/android.png"
+    },
+    {
+      "id": 8,
+      "title": "JavaScript",
+      "description": "Interactive web development utilizing ES6",
+      "image": "../Images/js.png"
+    },
+    {
+      "id": 9,
+      "title": "Pug/Jade",
+      "description": "HTML Precompiler",
+      "image": "../Images/pug.png"
     }
   ],
   
@@ -52,7 +66,7 @@
     {
       "id": 1,
       "title": "Portfolio Website",
-      "description": "The website you are currently on! I wanted to learn a new framework over winter break so I challenged myself to create my portfolio website in ReactJS. This project took about three weeks to finish.",
+      "description": "The website you are currently on! I wanted to learn a new framework over winter break so I challenged myself to create my portfolio website in ReactJS. This project took about five weeks to finish.",
       "url": "https://github.com/DashKoester/portfolio"
     },
     {

@@ -6,10 +6,10 @@ export default class Lab extends Component {
 
   render() {
     return (
-      <Item className='labItem'>
+      <Item className='labItem' style={{padding: '20px 0'}}>
         <Item.Content verticalAlign='middle'>
           <Header size='large'>{this.props.title}</Header>
-          <Header.Subheader>
+          <Header.Subheader style={{marginLeft: '7.5px', fontSize: '16px'}}>
             ({this.props.director})
           </Header.Subheader>
           <Item.Meta>

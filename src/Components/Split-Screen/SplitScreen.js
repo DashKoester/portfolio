@@ -45,8 +45,8 @@ export default class SplitScreen extends Component {
       showSplitScreen: !this.state.showSplitScreen,
       showResume: !this.state.showResume,
       data: techExperience,
-      activeItem: 'Languages',
-      menuTitles: ["Languages", "Frameworks", "Projects"],
+      activeItem: 'Languages and Frameworks',
+      menuTitles: ["Languages and Frameworks", "Projects"],
       title: 'Technical Experience'
     });
   }
