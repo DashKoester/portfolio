@@ -77,8 +77,6 @@ export default class SkillsList extends Component {
       console.log("Couldn't map the skills correctly!")
     }
 
-    
-
     return (
       <div>
         <Divider />

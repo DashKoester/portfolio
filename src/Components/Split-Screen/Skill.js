@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Header, Item, Icon } from 'semantic-ui-react';
 
 // import static images until I figure out webpack
-import cppImg from '../../Images/cpp.png';
+import cs225Img from '../../Images/cs225.png';
 import spottImg from '../../Images/spott.png'
 import faithImg from '../../Images/faith.png'
-import cs225Img from '../../Images/cs225.png'
+import portfolioImg from '../../Images/portfolio.png';
 
 // showcases a technical skill in skillList
 export default class Skill extends Component {
@@ -38,21 +38,20 @@ export default class Skill extends Component {
   determineImage(title) {
     switch(title){
 
+      case "Portfolio Website":
+        return portfolioImg;
+
       case "Spott":
-        let image = spottImg;
-        return image;
+        return spottImg;
 
       case "Faith Lutheran Church Website":
-        image = faithImg;
-        return image;
+        return faithImg;
 
       case "Data Structures":
-        image = cs225Img;
-        return image;
+        return cs225Img;
 
       default:
-        image = cppImg;
-        return image;
+        return portfolioImg
     }
   }
 } // Skill.js

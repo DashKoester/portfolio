@@ -99,8 +99,24 @@ html, body {
 }
 
 .lp-logo-container {
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
+}
+
+.lp-logo-about-me {
+  font-size: 24px;
+  margin: 30px;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.lp-logo-about-me:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .lp-resume-download {
@@ -114,15 +130,13 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
 }
 
 .about-me {
-  width: 80%;
+  background: white;
+  font-size: 20px;
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
 .about-me-text, .about-me-img {
@@ -137,7 +151,7 @@ html, body {
 
 .about-me-text h1 {
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -146,19 +160,25 @@ html, body {
 .about-me-text h2 {
   font-weight: lighter;
   color: gray;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 .about-me-text p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 0 20px;
 }
 
+.about-me-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-me-img img {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 
@@ -336,10 +356,16 @@ html, body {
 }
 
 .resume-container {
-  margin-bottom: 50px;
+  margin: 50px 0;
   padding: 40px;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4);
   border: .5px solid #13294b;
+}
+
+.column.language img {
+  height: 100px;
+  widows: 100px;
+  margin: auto;
 }
 
 .research-list {

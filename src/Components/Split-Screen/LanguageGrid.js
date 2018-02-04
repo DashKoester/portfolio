@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Language from './Language';
-import { ItemGroup, Divider, Grid } from 'semantic-ui-react';
+import { Divider, Grid } from 'semantic-ui-react';
 
 
 export default class LanguageGrid extends Component {
-
   constructor(props) {
     super(props);
 
@@ -30,18 +29,9 @@ export default class LanguageGrid extends Component {
   } 
   
   render() {
-    const languageComponents = this.state.skills.map((language) => (
-      <Language
-        key={'language-' + language.id}
-        id={language.id}
-        title={language.title}
-        description={language.description}
-      />
-    ));
-
-    const firstRow = this.state.skills.slice(0, 2);
-    const secondRow = this.state.skills.slice(2, 4);
-    const thirdRow = this.state.skills.slice(4, 6);
+    const firstRow = this.state.skills.slice(0, 3);
+    const secondRow = this.state.skills.slice(3, 6);
+    const thirdRow = this.state.skills.slice(6, 9);
     const finalRow = this.state.skills.slice(9);
 
     const firstRowComponents = firstRow.map((language) => (
@@ -83,7 +73,7 @@ export default class LanguageGrid extends Component {
     return (
       <div>
         <Divider />
-        <Grid columns={3} divided>
+        <Grid columns={3} celled='internally' textAlign='center'>
           <Grid.Row>
             {firstRowComponents}
           </Grid.Row>

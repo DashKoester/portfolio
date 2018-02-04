@@ -14,9 +14,9 @@
     },
     {
       "id": 2,
-      "title": "NodeJS",
-      "description": "NodeJS JavasScript development with a focus on React and Express",
-      "image": "../Images/node.png"
+      "title": "Python",
+      "description": "Neural Network modeling",
+      "image": "../Images/python.png"
     },
     {
       "id": 3,
@@ -38,24 +38,36 @@
     },
     {
       "id": 6,
-      "title": "Python",
-      "description": "Neural Network modeling",
-      "image": "../Images/python.png"
+      "title": "NodeJS",
+      "description": "Full stack development with a focus on React and Express",
+      "image": "../Images/node.png"
     },
     {
       "id": 7,
-      "title": "Android",
-      "description": "Mobile application development for Android systems",
-      "image": "../Images/android.png"
-    },
-    {
-      "id": 8,
       "title": "JavaScript",
       "description": "Interactive web development utilizing ES6",
       "image": "../Images/js.png"
     },
     {
+      "id": 8,
+      "title": "Android",
+      "description": "Mobile application development for Android systems",
+      "image": "../Images/android.png"
+    },
+    {
       "id": 9,
+      "title": "Semantic UI",
+      "description": "CSS Framework",
+      "image": "../Images/semanticUILogo.png"
+    },
+    {
+      "id": 10,
+      "title": "Bootstrap",
+      "description": "CSS Framework",
+      "image": "../Images/bootstrap.png"
+    },
+    {
+      "id": 11,
       "title": "Pug/Jade",
       "description": "HTML Precompiler",
       "image": "../Images/pug.png"
@@ -64,27 +76,27 @@
   
   "Projects": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Portfolio Website",
       "description": "The website you are currently on! I wanted to learn a new framework over winter break so I challenged myself to create my portfolio website in ReactJS. This project took about five weeks to finish.",
       "url": "https://github.com/DashKoester/portfolio"
     },
     {
-      "id": 2,
+      "id": 1,
       "title": "Spott",
       "description": "A crowd-sourced study spot finder app for Android. Devoloped for a group project at UIUC from September - December 2017.",
       "image": "../Images/spott.png",
       "url": "https://github.com/seb314/Spot"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Faith Lutheran Church Website",
       "description": "A website developed for a local church in Normal, IL. Developed and maintained solely by myself from June - December 2017.",
       "image": "../Images/faith.png",
       "url": "https://github.com/DashKoester/faith-lutheran"
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Data Structures",
       "description": "Several backend projects developed for CS225 - Data Structures course at UIUC. Completed assignments utilizing various forms of lists, trees, graphs, and more.",
       "image": "../Images/cs225.png",

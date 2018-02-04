@@ -87,7 +87,7 @@ export default class Split extends Component {
         </div>
 
         <div className={this.state.rightClassName} onMouseEnter={this.rightMouseEnter} onMouseLeave={this.rightMouseLeave}>
-        <Header as='h1' size='medium' inverted>The<br />Researcher</Header>
+        <Header as='h1' size='medium' inverted>The<br />Academic</Header>
           <Button className='ss-button' inverted animated='fade' onClick={this.props.handleRightClick}>
             <Button.Content visible>
               LEARN MORE

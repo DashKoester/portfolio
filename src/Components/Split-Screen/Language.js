@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Item, Icon } from 'semantic-ui-react';
+import { Header, Image, Grid } from 'semantic-ui-react';
 // import images until I figure out webpack
 import cppImg from '../../Images/cpp.png';
 import htmlImg from '../../Images/html.png';
@@ -11,6 +11,8 @@ import rImg from '../../Images/r.svg';
 import pythonImg from '../../Images/python.png';
 import javaImg from '../../Images/java.png';
 import nodeImg from '../../Images/node.png';
+import semanticImg from '../../Images/semanticUILogo.png';
+import bootstrapImg from '../../Images/bootstrap.png';
 
 export default class Language extends Component {
   
@@ -44,6 +46,12 @@ export default class Language extends Component {
       case "ReactJS":
         return reactImg;
 
+      case "Semantic UI":
+        return semanticImg;
+
+      case "Bootstrap":
+        return bootstrapImg;
+
       case "Pug/Jade":
         return pugImg;
 
@@ -55,15 +63,11 @@ export default class Language extends Component {
   render() {
 
     return (
-      <Item>
-        <Item.Image size='tiny' src={this.determineImage(this.props.title)} alt='LanguageImg' />
-        <Item.Content verticalAlign='top'>
-          <Header size='large'>{this.props.title}</Header>
-          <Item.Description>
-            {this.props.description}
-          </Item.Description>
-        </Item.Content>
-      </Item>
+      <Grid.Column className='language' center='true'>
+        <Image src={this.determineImage(this.props.title)} alt='LanguageImg' />
+        <Header size='large' textAlign='center'>{this.props.title}</Header>
+        {this.props.description}
+      </Grid.Column>      
     );
   }
-} // Lab.js
+} // Language.js

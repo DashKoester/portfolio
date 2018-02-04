@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Split from './Split';
 import Resume from './Resume';
 import techExperience from '../../techExperience.json';
@@ -26,10 +27,14 @@ export default class SplitScreen extends Component {
       showCoursework: false,
       showResume: false,
       showResearch: false
-    })
+    });
   }
-
   showCoursework = () => {
+    // Scroll to top of component
+    const componentYCoordinate = ReactDOM.findDOMNode(this).offsetTop - 0.5;
+    window.scroll(0, componentYCoordinate);
+
+    // Render component
     this.setState({
       showSplitScreen: !this.state.showSplitScreen,
       showCoursework: !this.state.showCoursework,
@@ -41,6 +46,11 @@ export default class SplitScreen extends Component {
   }  
 
   showResume = () => {
+    // Scroll to top of component
+    const componentYCoordinate = ReactDOM.findDOMNode(this).offsetTop - 0.5;
+    window.scroll(0, componentYCoordinate);
+
+    // Render component
     this.setState({
       showSplitScreen: !this.state.showSplitScreen,
       showResume: !this.state.showResume,
@@ -52,6 +62,11 @@ export default class SplitScreen extends Component {
   }
 
   showResearch = () => {
+    // Scroll to top of component
+    const componentYCoordinate = ReactDOM.findDOMNode(this).offsetTop - 0.5;
+    window.scroll(0, componentYCoordinate);
+
+    // Render component
     this.setState({
       showSplitScreen: !this.state.showSplitScreen,
       showResearch: !this.state.showResearch,
