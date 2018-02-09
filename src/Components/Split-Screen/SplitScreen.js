@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Split from './Split';
 import Resume from './Resume';
-import techExperience from '../../techExperience.json';
-import coursework from '../../coursework.json';
-import researchExperience from '../../researchExperience.json';
+import techExperience from '../../Data/techExperience.json';
+import coursework from '../../Data/coursework.json';
+import researchExperience from '../../Data/researchExperience.json';
 
 export default class SplitScreen extends Component {
   constructor(props){

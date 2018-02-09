@@ -1,0 +1,164 @@
+{
+  "Computer Science": [
+    {
+      "id": 0,
+      "courseNumber": "CS 440",
+      "title": "Artificial Intelligence",
+      "description": "A project-focused course covering fundamental principles of user interface design, implementation, and evaluation. Small teams work on a term-long project that involves: analysis of the problem domain, user skills, and tasks; iterative prototyping of interfaces to address user needs; conducting several forms of evaluation such as cognitive walkthroughs and usability tests; implementation of the final prototype.",
+      "topics": "Neural Networks, Java"
+    },
+    {
+      "id": 1,
+      "courseNumber": "CS 465",
+      "title": "User Interface Design",
+      "description": "A project-focused course covering fundamental principles of user interface design, implementation, and evaluation. Small teams work on a term-long project that involves: analysis of the problem domain, user skills, and tasks; iterative prototyping of interfaces to address user needs; conducting several forms of evaluation such as cognitive walkthroughs and usability tests; implementation of the final prototype.",
+      "topics": "Android, Java"      
+    },
+    {
+      "id": 2,
+      "courseNumber": "CS 412",
+      "title": "Introduction to Data Mining",
+      "description": "Major topics in and directions of research in artificial intelligence: AI languages (LISP and PROLOG), basic problem solving techniques, knowledge representation and computer inference, machine learning, natural language understanding, computer vision, robotics, and societal impacts.",
+      "topics": "Python, Data Science"
+    },
+    {
+      "id": 3,
+      "courseNumber": "CS 225",
+      "title": "Data Structures",
+      "description": "Data abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms.",
+      "topics": "C++, Algorithms"
+    },
+    {
+      "id": 4,
+      "courseNumber": "CS 173",
+      "title": "Discrete Structures",
+      "description": "Discrete mathematical structures frequently encountered in the study of Computer Science. Sets, propositions, Boolean algebra, induction, recursion, relations, functions, and graphs.",
+      "topics": "Set Theory, Inductive Proofs, Graphs"
+    },
+    {
+      "id": 5,
+      "courseNumber": "CS 125",
+      "title": "Intro to Computer Science",
+      "description": "Basic concepts in computing and fundamental techniques for solving computational problems. Intended as a first course for computer science majors and others with a deep interest in computing.",
+      "topics": "Java"
+    },
+    {
+      "id": 6,
+      "courseNumber": "CS 105",
+      "title": "Intro Computing: Non-Tech",
+      "description": "Computing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors.",
+      "topics": "HTML, CSS, JavaScript"
+    }
+  ],
+
+  "Neuroscience": [
+    {
+      "id": 0,
+      "courseNumber": "PSYC 489",
+      "title": "Neural Network Modeling Lab",
+      "description": "Introduction to neural network modeling, the principles of neural computation, learning algorithms and the evaluation of neural networks as models of human perception and cognition.",
+      "topics": "Neural Networks"
+    },
+    {
+      "id": 1,
+      "courseNumber": "PSYC 413",
+      "title": "Psychopharmacology",
+      "description": "Behavioral and physiological effects of chemicals either used therapeutically to treat psychological disorders or that may be abused for their psychotropic effects; emphasizes mechanisms and models for the study of drug action.",
+      "topics": "Neurochemistry, Psychotropics"
+    },
+    {
+      "id": 2,
+      "courseNumber": "PSYC 414",
+      "title": "Brain, Learning, and Memory",
+      "description": "Conveys a knowledge of current research on the physiological bases of learning and memory; considers a wide range of topics from molecular (e.g., cellular morphological and functional plasticity) to relatively molar (e.g., effects of clinical and experimental brain damage on learning and memory processes).",
+      "topics": "Neurobiology, Synaptic Plasticity, Long Term Memory"
+    },
+    {
+      "id": 3,
+      "courseNumber": "PSYC 324",
+      "title": "Developmental Psychopathology",
+      "description": "Overview of major theories and research in the field of developmental psychopathology. An emphasis will be placed on understanding how psychopathology is conceptualized from a developmental perspective. Topics will involve issues related to etiology, assessment, classification/diagnosis, and intervention. A range of psychological problems in childhood and adolescence will be discussed to illustrate the central themes.",
+      "topics": "Psychological Disorders, Developmental Psychology"
+    },
+    {
+      "id": 4,
+      "courseNumber": "PSYC 311",
+      "title": "Behavioral Neuroscience Lab",
+      "description": "Introduction to the research techniques used in behavioral neuroscience: includes behavioral analysis of drug effects, anatomy of the brain, hormones and behavior, neural circuits and related topics. Students will have direct experience working with laboratory rats to understand their importance in the advancement of our knowledge about how the brain functions.",
+      "topics": "Neuroanatomy, Research Methods"
+    },
+    {
+      "id": 5,
+      "courseNumber": "PSYC 235",
+      "title": "Intro To Statistics",
+      "description": "Development of skill and understanding in the application of statistical methods to problems in psychological research; topics include descriptive statistics, probability theory and distributions, point and interval estimation, and hypothesis testing.",
+      "topics": "Statistical Analysis, Research"
+    },
+    {
+      "id": 6,
+      "courseNumber": "PSYC 224",
+      "title": "Cognitive Psychology",
+      "description": "Introduction to the psychological study of human information processing and memory; acquisition, retrieval, and forgetting; and general knowledge, concepts, reasoning, and related issues in cognition.",
+      "topics": "Information Processing, Attention, Memory"
+    },
+    {
+      "id": 7,
+      "courseNumber": "PSYC 238",
+      "title": "Abnormal Psychology",
+      "description": "Conceptions and facts about disordered behavior, including psychoses, neuroses, and other patterns of psychological disturbance.",
+      "topics": "Psychological Disorders, Developmental Psychology"
+    },
+    {
+      "id": 8,
+      "courseNumber": "PSYC 210",
+      "title": "Bevahioral Neuroscience",
+      "description": "Survey of current knowledge and speculation regarding the brain's role in perception, motivation, sexual behavior, thinking, memory, and learning, based upon human clinical data and research in animal models.",
+      "topics": "Neuroanatomy, Genetics"
+    }
+  ],
+
+  "Philosophy": [
+    {
+      "id": 0,
+      "courseNumber": "PHIL 436",
+      "title": "Philosophy of Law and of the State",
+      "description": "Examination of issues in the philosophy of law, such as the nature of law, law and morality, justice, liberty and authority, punishment, and legal responsibility.",
+      "topics": "Political Theory, Ethical Theory"
+    },
+    {
+      "id": 1,
+      "courseNumber": "PHIL 357",
+      "title": "Intro Cognitive Science",
+      "description": "In-depth introduction to cognitive science: the study of mind and intelligence, natural and artificial. Covers major integrative themes including inverse optics and vision; induction and reasoning; learnability; language; philosophy; minds and brains; evolution; computation and computability; experimental and modeling techniques; information theory; knowledge representation; interrelations among these topics.",
+      "topics": "Information Theory, Computation, Intelligence"
+    },
+    {
+      "id": 2,
+      "courseNumber": "PHIL 210",
+      "title": "Ethics",
+      "description": "Problems in ethical theory; the nature of right and wrong, justice, conscience, moral feelings, etc.",
+      "topics": "Ethical Theory"
+    },
+    {
+      "id": 3,
+      "courseNumber": "PHIL 206",
+      "title": "Early Modern Philosophy",
+      "description": "The history of philosophy from Descartes to Kant, concentrating on such topics as metaphysics, ethics, and the theory of knowledge.",
+      "topics": "Metaphysics, Ethical Theory"
+    },
+    {
+      "id": 4,
+      "courseNumber": "PHIL 203",
+      "title": "Ancient Philosophy",
+      "description": "Introduction to ancient philosophy, concentrating on Plato and Aristotle, dealing with such topics as metaphysics, ethics, and the theory of knowledge.",
+      "topics": "Aristotle, Plato, Justice Theory"
+    },
+    {
+      "id": 5,
+      "courseNumber": "PHIL 105",
+      "title": "Introduction to Ethics",
+      "description": "Some basic questions of ethics, discussed in the light of influential ethical theories and with reference to specific moral problems, such as: what makes an action morally right? are moral standards absolute or relative? what is the relation between personal morality and social morality, and between social morality and law?",
+      "topics": "Ethical Theory"
+    }
+  ]
+}

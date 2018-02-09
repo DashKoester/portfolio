@@ -6,7 +6,7 @@ import semanticImage from '../../Images/semanticUILogo.png';
 const containerStyle = {
   background: 'lightslategray',
   width: '100%',
-  padding: '20px',
+  padding: '10px 20px',
   opacity: '.7',
   display: 'flex',
   justifyContent: 'space-between',

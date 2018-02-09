@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-
 html, body {
   font-family: sans-serif;
   background: white;
@@ -43,6 +41,10 @@ html, body {
   color: #818181;
   display: block;
   transition: 0.3s
+}
+
+.sidenav a:hover {
+  color: white;
 }
 
 .sidenav-icon {
@@ -146,7 +148,8 @@ html, body {
 }
 
 .about-me-text {
-  padding: 30px;
+  padding: 30px@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+  ;
 }
 
 .about-me-text h1 {

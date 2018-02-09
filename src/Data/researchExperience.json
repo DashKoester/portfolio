@@ -1,0 +1,28 @@
+{
+  "Labs":[
+    {
+      "id": 0,
+      "title": "Spatial Cognition Laboratory",
+      "director": "Dr. Ranxiao Frances Wang",
+      "timeframe": "February 2016 - May 2016",
+      "description": "The Spatial Cognition Lab was the first research lab I worked in at the University of Illinois at Urbana-Champaign. I worked primarily under the graduate student Meera Zukosky. The purpose of the study was to calculate approximately how long a person can focus on a specific cognitive task before their attention breaks and shifts elsewhere. I was one of the two research assistants who guided participants through the experiment and recorded the results. We utilized O-Span tests and other interactive programs to track and record participant results.",
+      "url": "http://publish.illinois.edu/franceswang/lab/"
+    },
+    {
+      "id": 1,
+      "title": "Center for Parent-Child Studies",
+      "director": "Dr. Eva Pomerantz",
+      "timeframe": "May 2016 - December 2016",
+      "description": "The second lab I worked in was the Center for Parent-Child Studies. I was primarily supervised by graduate student Janet Ng. We worked with a sister laboratory located in Hong Kong, China to determine the quantifiable cultural differences in parenting styles between American and Eastern-Asian parents. I conducted the section of the experiment involving the child participants. I provided guidance, recorded the results, and presented the results to each child's parent. For the parent section of the experiment, I transcribed and analyzed video recorded parent responses. I used Excel spreadsheets extensively to compile my analysis. The early stages of the study indicated that American parents were much more focused on their child’s self-worth and confidence, whereas the Asian parents focused more on their children improving on the task.",
+      "url": "http://labs.psychology.illinois.edu/cpcs/"
+    },
+    {
+      "id": "2",
+      "title": "Decision Neuroscience Laboratory",
+      "director": "Dr. Aron K. Barbey",
+      "timeframe": "February 2017 - August 2017",
+      "description": "I most recently worked in the Decision Neuroscience Lab at the renowned Beckman Institute for Advanced Science and Technology. During my work under the supervision of Post-Doctoral Fellow Chris Zwilling, I had the opportunity to integrate computer science and neuroscience research. I was chosen to contribute to two projects. The first was a Nutritional Cognitive Enhancement study, testing the effects of dietary supplements on focus and cognition. I was the sole undergraduate Research Assistant working on a Cognitive Chronobiology study, exploring the cognitive effects of circadian rhythms and time of day. I will be credited as a co-author on the Chronobiology paper when it is published. For both projects, I wrote the data analysis in R, a statistical computing scripting language. In addition to developing the data analysis, I created multiple graphs and spreadsheets for the Lab Director to use while presenting the project to financiers and journal editors.",
+      "url": "https://www.decisionneurosciencelab.org/"
+    }
+  ]
+}

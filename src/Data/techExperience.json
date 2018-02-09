@@ -1,0 +1,106 @@
+{
+  "Languages and Frameworks": [
+    {
+      "id": 0,
+      "title": "ReactJS",
+      "description": "Front-End JavaScript Framework",
+      "image": "../Images/react.png"
+    },
+    {
+      "id": 1,
+      "title": "C++",
+      "description": "Backend data structure development with C++11 and the Clang compiler",
+      "image": "../Images/cpp.png"
+    },
+    {
+      "id": 2,
+      "title": "Python",
+      "description": "Neural Network modeling",
+      "image": "../Images/python.png"
+    },
+    {
+      "id": 3,
+      "title": "HTML & CSS",
+      "description": "Modern web development utilizing Flex and Grid layouts",
+      "image": "../Images/html.png"
+    },
+    {
+      "id": 4,
+      "title": "Java",
+      "description": "General Java and event-driven Android programming",
+      "image": "../Images/java.png"
+    },
+    {
+      "id": 5,
+      "title": "R",
+      "description": "Data analysis and Visualization scripts",
+      "image": "../Images/r.png"
+    },
+    {
+      "id": 6,
+      "title": "NodeJS",
+      "description": "Full stack development with a focus on React and Express",
+      "image": "../Images/node.png"
+    },
+    {
+      "id": 7,
+      "title": "JavaScript",
+      "description": "Interactive web development utilizing ES6",
+      "image": "../Images/js.png"
+    },
+    {
+      "id": 8,
+      "title": "Android",
+      "description": "Mobile application development for Android systems",
+      "image": "../Images/android.png"
+    },
+    {
+      "id": 9,
+      "title": "Semantic UI",
+      "description": "CSS Framework",
+      "image": "../Images/semanticUILogo.png"
+    },
+    {
+      "id": 10,
+      "title": "Bootstrap",
+      "description": "CSS Framework",
+      "image": "../Images/bootstrap.png"
+    },
+    {
+      "id": 11,
+      "title": "Pug/Jade",
+      "description": "HTML Precompiler",
+      "image": "../Images/pug.png"
+    }
+  ],
+  
+  "Projects": [
+    {
+      "id": 0,
+      "title": "Portfolio Website",
+      "description": "The website you are currently on! I wanted to learn a new framework over winter break so I challenged myself to create my portfolio website in ReactJS. This project took about five weeks to finish.",
+      "url": "https://github.com/DashKoester/portfolio"
+    },
+    {
+      "id": 1,
+      "title": "Spott",
+      "description": "A crowd-sourced study spot finder app for Android. Devoloped for a group project at UIUC from September - December 2017.",
+      "image": "../Images/spott.png",
+      "url": "https://github.com/seb314/Spot"
+    },
+    {
+      "id": 2,
+      "title": "Faith Lutheran Church Website",
+      "description": "A website developed for a local church in Normal, IL. Developed and maintained solely by myself from June - December 2017.",
+      "image": "../Images/faith.png",
+      "url": "https://github.com/DashKoester/faith-lutheran"
+    },
+    {
+      "id": 3,
+      "title": "Data Structures",
+      "description": "Several backend projects developed for CS225 - Data Structures course at UIUC. Completed assignments utilizing various forms of lists, trees, graphs, and more.",
+      "image": "../Images/cs225.png",
+      "url": "https://courses.engr.illinois.edu/cs225/fa2017/info/github/"
+    }
+  ]
+}
