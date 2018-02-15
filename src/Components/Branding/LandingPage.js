@@ -71,7 +71,7 @@ export default class LandingPage extends Component {
                       </Header.Subheader>
                     </Header>
                   }
-                  content='Public code repository'
+                  content='Primary code repository'
                 />
               </a>
               <a href='https://www.gitlab.com/DashKoester'>
@@ -86,7 +86,7 @@ export default class LandingPage extends Component {
                     </Header.Subheader>
                   </Header>
                 }
-                content='Private code repository'
+                content='Secondary code repository'
                 on='hover'
               />
               </a>
