@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Header, Icon, Modal, Button, Popup } from 'semantic-ui-react'
-import backgroundImage from '../../Images/landingPage.png'
+import backgroundImage from '../../Images/landingPage.jpg'
 import conciseResume from '../../Images/conciseResume.pdf'
 import fullResume from '../../Images/fullResume.pdf'
 import AboutMe from '../Branding/AboutMe'
