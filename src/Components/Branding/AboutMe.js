@@ -9,7 +9,7 @@ export default class AboutMe extends Component {
         <div className='about-me'>
           <div className='about-me-text'>
             <h1>Dashiell Koester</h1>
-            <h2>Neuroscience Student // Aspiring Sofware Developer</h2>
+            <h2>Neuroscience Student // Aspiring Software Developer</h2>
             <Divider />
             <p>
               Hi! My name is Dashiell Koester (but Dash is easier for most people to say). I am currently a Senior at the University of Illinois at Urbana-Champaign. In May, I will receive a Bachelor of Science in Psychology with a concentration in Behavioral Neuroscience. Along with my B.S., I will earn a Minor degree in Computer Science and a Minor degree in Philosophy.
