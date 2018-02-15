@@ -6,6 +6,7 @@ import cs225Img from '../../Images/cs225.png';
 import spottImg from '../../Images/spott.png'
 import faithImg from '../../Images/faith.png'
 import portfolioImg from '../../Images/portfolio.png';
+import mehuImg from '../../Images/mehu.png'
 
 // showcases a technical skill in skillList
 export default class Skill extends Component {
@@ -37,6 +38,9 @@ export default class Skill extends Component {
   // hacky way to determnine which image should be rendered
   determineImage(title) {
     switch(title){
+
+      case "Mehu":
+        return mehuImg;
 
       case "Portfolio Website":
         return portfolioImg;

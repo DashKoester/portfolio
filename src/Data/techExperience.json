@@ -77,26 +77,31 @@
   "Projects": [
     {
       "id": 0,
+      "title": "Mehu",
+      "description": "Mehu is a social barbershop scheduling app for clients, providers, and businesses. I am one of two front-end developers working for the startup. The app was originally published in 2016, but we are rewriting everything from scratch in React Native for the new version. The app is set to release around May 2018."
+    },
+    {
+      "id": 1,
       "title": "Portfolio Website",
       "description": "The website you are currently on! I wanted to learn a new framework over winter break so I challenged myself to create my portfolio website in ReactJS. This project took about five weeks to finish.",
       "url": "https://github.com/DashKoester/portfolio"
     },
     {
-      "id": 1,
+      "id": 2,
       "title": "Spott",
       "description": "A crowd-sourced study spot finder app for Android. Devoloped for a group project at UIUC from September - December 2017.",
       "image": "../Images/spott.png",
       "url": "https://github.com/seb314/Spot"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Faith Lutheran Church Website",
       "description": "A website developed for a local church in Normal, IL. Developed and maintained solely by myself from June - December 2017.",
       "image": "../Images/faith.png",
       "url": "https://github.com/DashKoester/faith-lutheran"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Data Structures",
       "description": "Several backend projects developed for CS225 - Data Structures course at UIUC. Completed assignments utilizing various forms of lists, trees, graphs, and more.",
       "image": "../Images/cs225.png",
